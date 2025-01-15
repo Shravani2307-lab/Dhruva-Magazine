@@ -27,7 +27,8 @@
 
         .header p {
             font-style: italic;
-            margin: 10px 0; /* Reduced margin */
+            margin: 0.5px 0; 
+            font-size: 20px;
         }
 
         .content {
@@ -73,12 +74,52 @@
         }
 
         a {
-            color: lightblue; /* Changed hyperlink color */
+            color: rgb(171, 242, 105); 
             text-decoration: none;
+            font-size: 20px;
         }
 
         a:hover {
             text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5em;
+            }
+
+            .content {
+                margin: 20px;
+                padding: 15px;
+            }
+
+            .sub-theme {
+                padding: 10px;
+            }
+
+            .content h2 {
+                font-size: 1.8em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                margin: 10px;
+                padding: 10px;
+            }
+
+            .sub-theme {
+                padding: 8px;
+            }
+
+            .content h2 {
+                font-size: 1.5em;
+            }
         }
     </style>
 </head>
@@ -145,6 +186,8 @@
     <footer>
         <p>Let your creativity shine like the stars—be part of Dhruva 6.0! ✠</p>
         <p>Warm regards,<br>Editorial Team, Dhruva Magazine 6.0</p>
+
+        <p>&copy; 2025 Editorial Team Dhruva Magazine. All rights reserved.</p>
     </footer>
 </body>
 </html>
